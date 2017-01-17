@@ -22,7 +22,11 @@ class MyTestCases(unittest.TestCase):
         self.assertEqual(primeNumberFunction(5), [1,2,3,5])
     def testEight(self):
         self.assertEqual(primeNumberFunction(1.3), "Only accept integers")
-   
+    def testNine(self):
+        self.assertEqual(primeNumberFunction(0.7), "Only accept integers")
+    def testTen(self):
+        stuff = {'string': 'name', 'int': 25}
+        self.assertEqual(primeNumberFunction(stuff), "Only accept integers")
 
 if __name__ == '__main__':
     unittest.main()

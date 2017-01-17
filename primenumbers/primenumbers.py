@@ -16,7 +16,13 @@ class MyTestCases(unittest.TestCase):
         self.assertEqual(primeNumberFunction(0), "Not a prime number")
     def testFive(self):
         self.assertEqual(primeNumberFunction(1), 1)
-    
+    def testSix(self):
+        self.assertEqual(primeNumberFunction([1,2,3]), "Not a number")
+    def testSeven(self):
+        self.assertEqual(primeNumberFunction(5), [1,2,3,5])
+    def testEight(self):
+        self.assertEqual(primeNumberFunction(1.3), "Only accept integers")
+   
 
 if __name__ == '__main__':
     unittest.main()

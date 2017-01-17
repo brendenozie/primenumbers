@@ -10,6 +10,12 @@ class MyTestCases(unittest.TestCase):
         self.assertEqual(primeNumberFunction("A"), "The function only expects a number")
     def testTwo(self):
         self.assertEqual(primeNumberFunction(20), [1,2,3,5,7,11,13,17])
+    def testThree(self):
+        self.assertEqual(primeNumberFunction(-5), "There are no negative pime numbers")
+    def testFour(self):
+        self.assertEqual(primeNumberFunction(0), "Not a prime number")
+    def testFive(self):
+        self.assertEqual(primeNumberFunction(1), 1)
     
 
 if __name__ == '__main__':
